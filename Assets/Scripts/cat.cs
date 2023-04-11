@@ -33,7 +33,10 @@ public class cat : MonoBehaviour
             } else if (type == 1)
             {
                 transform.position += new Vector3(0, -0.03f, 0);
-            }           
+            } else if (type == 2)
+            {
+                transform.position += new Vector3(0, -0.1f, 0);
+            }
 
             if (transform.position.y < -16f)
             {
