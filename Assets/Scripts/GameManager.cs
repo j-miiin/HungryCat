@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
-        InvokeRepeating("makeFood", 0.0f, 0.05f);
+        InvokeRepeating("makeFood", 0.0f, 0.1f);
         InvokeRepeating("makeCat", 0.0f, 1f);
     }
 
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         {
             float p = Random.Range(0, 10);
             if (p < 2) Instantiate(normalCat);
-        } else if (level >= 2)
+        } else if (level == 2)
         {
             float p = Random.Range(0, 10);
             if (p < 5) Instantiate(normalCat);
